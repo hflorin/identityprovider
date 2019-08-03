@@ -45,6 +45,7 @@ D:\Tests\IdentityProvider\Licenta\Src\Licenta.IdentityProvider\bin\Debug\netcore
 D:\Tests\IdentityProvider\Licenta\Src\Licenta.IdentityProvider\bin\Debug\netcoreapp2.1\Licenta.IdentityProvider.pdb
 D:\Tests\IdentityProvider\Licenta\Src\Licenta.IdentityProvider\bin\Debug\netcoreapp2.1\Licenta.IdentityProvider.Views.dll
 D:\Tests\IdentityProvider\Licenta\Src\Licenta.IdentityProvider\bin\Debug\netcoreapp2.1\Licenta.IdentityProvider.Views.pdb
+D:\Tests\IdentityProvider\Licenta\Src\Licenta.IdentityProvider\obj\Debug\netcoreapp2.1\Licenta.IdentityProvider.csprojAssemblyReference.cache
 D:\Tests\IdentityProvider\Licenta\Src\Licenta.IdentityProvider\obj\Debug\netcoreapp2.1\Licenta.IdentityProvider.csproj.CoreCompileInputs.cache
 D:\Tests\IdentityProvider\Licenta\Src\Licenta.IdentityProvider\obj\Debug\netcoreapp2.1\Licenta.IdentityProvider.RazorAssemblyInfo.cache
 D:\Tests\IdentityProvider\Licenta\Src\Licenta.IdentityProvider\obj\Debug\netcoreapp2.1\Licenta.IdentityProvider.RazorAssemblyInfo.cs

@@ -4,3 +4,5 @@
 
 /Licenta/.vs/Licenta/v16/Server/sqlite3
 /.vs
+/bin/
+/obj/

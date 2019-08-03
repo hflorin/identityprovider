@@ -50,7 +50,7 @@ using IdentityServer4.Quickstart.UI;
             WriteLiteral("\n<div class=\"logout-page\">\n    <div class=\"page-header\">\n        <h1>Logout</h1>\n    </div>\n\n    <div class=\"row\">\n        <div class=\"col-sm-6\">\n            <p>Would you like to logout of IdentityServer?</p>\n            ");
             EndContext();
             BeginContext(244, 323, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c986dd831d24526bddf14c97162316a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b4f6a3c57261426e81b1b5f46af1264e", async() => {
                 BeginContext(270, 53, true);
                 WriteLiteral("\n                <input type=\"hidden\" name=\"logoutId\"");
                 EndContext();
