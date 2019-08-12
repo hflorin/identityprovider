@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Tests\\IdentityProvider\\Licenta\\Src\\Licenta.IdentityProvider\\Licenta.IdentityProvider.csproj": {}
+    "C:\\Users\\Computer\\source\\repos\\identityprovider\\Licenta\\Src\\Licenta.IdentityProvider\\Licenta.IdentityProvider.csproj": {}
   },
   "projects": {
-    "D:\\Tests\\IdentityProvider\\Licenta\\Src\\Licenta.IdentityProvider\\Licenta.IdentityProvider.csproj": {
+    "C:\\Users\\Computer\\source\\repos\\identityprovider\\Licenta\\Src\\Licenta.IdentityProvider\\Licenta.IdentityProvider.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tests\\IdentityProvider\\Licenta\\Src\\Licenta.IdentityProvider\\Licenta.IdentityProvider.csproj",
+        "projectUniqueName": "C:\\Users\\Computer\\source\\repos\\identityprovider\\Licenta\\Src\\Licenta.IdentityProvider\\Licenta.IdentityProvider.csproj",
         "projectName": "Licenta.IdentityProvider",
-        "projectPath": "D:\\Tests\\IdentityProvider\\Licenta\\Src\\Licenta.IdentityProvider\\Licenta.IdentityProvider.csproj",
-        "packagesPath": "C:\\Users\\flori\\.nuget\\packages\\",
-        "outputPath": "D:\\Tests\\IdentityProvider\\Licenta\\Src\\Licenta.IdentityProvider\\obj\\",
+        "projectPath": "C:\\Users\\Computer\\source\\repos\\identityprovider\\Licenta\\Src\\Licenta.IdentityProvider\\Licenta.IdentityProvider.csproj",
+        "packagesPath": "C:\\Users\\Computer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Computer\\source\\repos\\identityprovider\\Licenta\\Src\\Licenta.IdentityProvider\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\flori\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +25,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\Projects\\Nuget Packages Source": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

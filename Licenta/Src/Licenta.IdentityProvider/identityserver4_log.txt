@@ -923,3 +923,237 @@ The statement has been terminated.
 2019-08-03 10:21:01.336 +03:00 [DBG] Adding auth_time claim with value: 1564816861
 2019-08-03 10:21:01.337 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
 2019-08-03 10:21:01.356 +03:00 [INF] {"Username":"test2@test.com","Provider":null,"ProviderUserId":null,"SubjectId":"01903fbe-edd3-400b-b699-ca33a1e6e026","DisplayName":"test2@test.com","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLONSBCP2K0H:0000000C","TimeStamp":"2019-08-03T07:21:01.0000000Z","ProcessId":9428,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-08-04 17:58:13.717 +03:00 [INF] Starting IdentityServer4 version 2.5.1.0
+2019-08-04 17:58:13.762 +03:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-08-04 17:58:13.773 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-08-04 17:58:13.773 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-08-04 17:58:13.774 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-08-04 17:58:13.774 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-08-04 17:58:13.774 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-08-04 17:58:13.775 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-08-04 17:58:14.803 +03:00 [DBG] Login Url: /Identity/Account/Login
+2019-08-04 17:58:14.805 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-08-04 17:58:14.807 +03:00 [DBG] Logout Url: /Identity/Account/Logout
+2019-08-04 17:58:14.808 +03:00 [DBG] ConsentUrl Url: /consent
+2019-08-04 17:58:14.810 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-08-04 17:58:14.811 +03:00 [DBG] Error Url: /home/error
+2019-08-04 17:58:14.812 +03:00 [DBG] Error Id Parameter: errorId
+2019-08-04 17:59:25.624 +03:00 [WRN] User cd257985-b4ed-4bce-99c7-1ac8466f1344 password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresUpper.
+2019-08-04 18:00:31.281 +03:00 [ERR] An error occurred using the connection to database 'IdentityProvider' on server 'FLORINELH'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (53): The network path was not found
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2019-08-04 18:00:31.456 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Licenta.IdentityProvider.ApplicationDbContext'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (53): The network path was not found
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\First.cs:line 144
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (53): The network path was not found
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\First.cs:line 144
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2019-08-04 18:00:31.498 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Licenta.IdentityProvider.ApplicationDbContext'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (53): The network path was not found
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\First.cs:line 144
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (53): The network path was not found
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\First.cs:line 144
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2019-08-04 18:00:31.594 +03:00 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (53): The network path was not found
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2019-08-04 18:00:31.612 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (53): The network path was not found
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\First.cs:line 144
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.UserValidator`1.ValidateUserName(UserManager`1 manager, TUser user, ICollection`1 errors)
+   at Microsoft.AspNetCore.Identity.UserValidator`1.ValidateAsync(UserManager`1 manager, TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.ValidateUserAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user, String password)
+   at Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.RegisterModel`1.OnPostAsync(String returnUrl)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 72
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\MtlsTokenEndpointMiddleware.cs:line 60
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2019-08-04 18:01:28.201 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-08-04 18:03:04.466 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-08-04 18:03:40.890 +03:00 [DBG] Augmenting SignInContext
+2019-08-04 18:03:40.892 +03:00 [DBG] Adding idp claim with value: local
+2019-08-04 18:03:40.893 +03:00 [DBG] Adding amr claim with value: pwd
+2019-08-04 18:03:40.895 +03:00 [DBG] Adding auth_time claim with value: 1564931020
+2019-08-04 18:03:40.906 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-08-11 13:56:13.487 +03:00 [INF] Starting IdentityServer4 version 2.5.1.0
+2019-08-11 13:56:13.533 +03:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-08-11 13:56:13.544 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-08-11 13:56:13.544 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-08-11 13:56:13.545 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-08-11 13:56:13.545 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-08-11 13:56:13.546 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-08-11 13:56:13.546 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-08-11 13:56:14.877 +03:00 [DBG] Login Url: /Identity/Account/Login
+2019-08-11 13:56:14.880 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-08-11 13:56:14.882 +03:00 [DBG] Logout Url: /Identity/Account/Logout
+2019-08-11 13:56:14.883 +03:00 [DBG] ConsentUrl Url: /consent
+2019-08-11 13:56:14.884 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-08-11 13:56:14.885 +03:00 [DBG] Error Url: /home/error
+2019-08-11 13:56:14.886 +03:00 [DBG] Error Id Parameter: errorId
+2019-08-11 13:56:23.268 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-08-11 13:56:23.746 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-08-11 13:56:34.191 +03:00 [DBG] Augmenting SignInContext
+2019-08-11 13:56:34.194 +03:00 [DBG] Adding idp claim with value: local
+2019-08-11 13:56:34.195 +03:00 [DBG] Adding amr claim with value: pwd
+2019-08-11 13:56:34.197 +03:00 [DBG] Adding auth_time claim with value: 1565520994
+2019-08-11 13:56:34.214 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-08-11 14:22:24.558 +03:00 [INF] Starting IdentityServer4 version 2.5.1.0
+2019-08-11 14:22:24.599 +03:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-08-11 14:22:24.608 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-08-11 14:22:24.608 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-08-11 14:22:24.609 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-08-11 14:22:24.609 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-08-11 14:22:24.609 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-08-11 14:22:24.610 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-08-11 14:22:25.380 +03:00 [DBG] Login Url: /Identity/Account/Login
+2019-08-11 14:22:25.383 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-08-11 14:22:25.385 +03:00 [DBG] Logout Url: /Identity/Account/Logout
+2019-08-11 14:22:25.386 +03:00 [DBG] ConsentUrl Url: /consent
+2019-08-11 14:22:25.388 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-08-11 14:22:25.389 +03:00 [DBG] Error Url: /home/error
+2019-08-11 14:22:25.389 +03:00 [DBG] Error Id Parameter: errorId

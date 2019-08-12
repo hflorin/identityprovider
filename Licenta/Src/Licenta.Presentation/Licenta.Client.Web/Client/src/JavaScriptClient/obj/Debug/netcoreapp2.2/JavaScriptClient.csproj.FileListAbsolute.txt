@@ -1,0 +1,6 @@
+C:\Users\Computer\source\repos\identityprovider\Licenta\Src\Licenta.Presentation\Licenta.Client.Web\Client\src\JavaScriptClient\obj\Debug\netcoreapp2.2\JavaScriptClient.csproj.CoreCompileInputs.cache
+C:\Users\Computer\source\repos\identityprovider\Licenta\Src\Licenta.Presentation\Licenta.Client.Web\Client\src\JavaScriptClient\obj\Debug\netcoreapp2.2\JavaScriptClient.RazorAssemblyInfo.cache
+C:\Users\Computer\source\repos\identityprovider\Licenta\Src\Licenta.Presentation\Licenta.Client.Web\Client\src\JavaScriptClient\obj\Debug\netcoreapp2.2\JavaScriptClient.RazorAssemblyInfo.cs
+C:\Users\Computer\source\repos\identityprovider\Licenta\Src\Licenta.Presentation\Licenta.Client.Web\Client\src\JavaScriptClient\obj\Debug\netcoreapp2.2\JavaScriptClient.AssemblyInfoInputs.cache
+C:\Users\Computer\source\repos\identityprovider\Licenta\Src\Licenta.Presentation\Licenta.Client.Web\Client\src\JavaScriptClient\obj\Debug\netcoreapp2.2\JavaScriptClient.AssemblyInfo.cs
+C:\Users\Computer\source\repos\identityprovider\Licenta\Src\Licenta.Presentation\Licenta.Client.Web\Client\src\JavaScriptClient\obj\Debug\netcoreapp2.2\JavaScriptClient.csprojAssemblyReference.cache
